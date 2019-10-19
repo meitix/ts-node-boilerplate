@@ -1,5 +1,3 @@
-#Typescript Node.js Boilerplate
-A Boilerplate project for crash applications using express, typescript, typeorm, inversify, mocha, chai, winston and dotenv-flow.
 
 ##Quick Start
 ####Install Dependencies
