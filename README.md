@@ -25,8 +25,9 @@ For running application in development mode simply can run
 #### Start manually
 
 For using .env files you need to run commands with "NODE_ENV" prefix.
+
 __General:__
-`cross-env` package is installed
+`cross-env` package is installed as a dev-dependency.
 
     $ cross-env NODE_ENV=development src/index.ts
 
@@ -44,9 +45,13 @@ __NOTE:__ If don't pass any NODE_ENV prefix application will use `.env` file as 
 #### Commands
 
 `$ npm run generate`: Generate routes and swagger config file.
+
 `$ npm run test`: Run unit tests.
+
 `$ npm run start:dev`: Start application in development mode.
+
 `$ npm run build`: Compile ts files to js and store the compiled files in `dist` folder.
+
 `$ npm start`: Start the application in production mode. required `build` command first.
 
 
