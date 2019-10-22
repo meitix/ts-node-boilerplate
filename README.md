@@ -7,7 +7,7 @@ Run the following command to install project dependencies.
 `$ npm i`
 
 #### Generate Routes and Swagger Documentation.
-In order to have the latest routes and swagger documentation matches with the controller run `npm generate` command
+In order to have the latest routes and swagger documentation matches with the controller run `npm run generate` command
 
 #### Configurations
 For setting up you need to pass some variables with `.env` file. Can find a sample `.env` file in project's root named `.env.example`
@@ -18,7 +18,7 @@ For having multiple environment variables for different stages you will need to 
 __NOTE:__ If do not need multiple .env file just use ".env" as file name.
 
 #### Start
-For running application in development mode simply can run 
+For running application in development mode use the following command.
 
     npm run start:dev
 
