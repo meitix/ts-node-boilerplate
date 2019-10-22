@@ -5,32 +5,32 @@ import { inject, injectable } from 'inversify';
 @Route('samples')
 @injectable()
 export class SampleController extends Controller {
-  constructor(@inject(TYPES.ISampleService) private paymentPlanService: ISampleService) {
+  constructor(@inject(TYPES.ISampleService) private sampleService: ISampleService) {
       super();
   }
   
   @Get()
   async list(@Query() filter?: any): Promise<ISample[]> {
-    return this.paymentPlanService.find(filter);
+    return this.sampleService.find(filter);
   }
 
   @Get('{id}')
   async find(id: number): Promise<ISample> {
-    return this.paymentPlanService.findById(id);
+    return this.sampleService.findById(id);
   }
   
   @Post()
   async create(@Body() plan: ISample): Promise<ISample> {
-    return await this.paymentPlanService.create(plan);
+    return await this.sampleService.create(plan);
   }
 
   @Put('{id}')
   async update(id:number, @Body() plan: ISample): Promise<any> {
-    return this.paymentPlanService.update(id, plan);
+    return this.sampleService.update(id, plan);
   }
   
   @Delete('{id}')
    async delete(id: number): Promise<any> {
-     return this.paymentPlanService.delete(id);
+     return this.sampleService.delete(id);
    }
 }
