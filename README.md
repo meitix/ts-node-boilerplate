@@ -58,4 +58,4 @@ __NOTE:__ If don't pass any NODE_ENV prefix application will use `.env` file as 
 #### Tests
 This project uses `mocha` as test framework and `chai` as assertion library.
 
-Currently API tests are located in `test` folder in project root but you can place test files anywhere in `src` folder but test files must have `.test` before their extensions like `service.test.ts`
+Currently API tests are located in `test` folder in project root but you can place test files anywhere in `src` folder keep in mind test files must have `.test` before their extensions like `service.test.ts`
