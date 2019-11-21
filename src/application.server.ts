@@ -13,7 +13,7 @@ export class ApplicationServer {
   protected logger: ILogger;
   
   constructor(protected config: UserDirectoryConfiguration) {
-    this.logger = config.logger || console.log as any;
+    this.logger = config.logger || console as any;
     this.app = express();
   }
 
